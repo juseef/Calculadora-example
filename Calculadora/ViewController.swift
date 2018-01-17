@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var operacion: Operacion!
     
     @IBOutlet weak var lblDisplay: UITextField!
     
@@ -32,9 +32,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func bntBorrar(_ sender: UIButton) {
-        let nuevoTexto = lblDisplay.text![..<(lblDisplay.text!.endIndex - 1)]
+        var texto:String = (lblDisplay.text)!
+        texto.remove(at: texto.endIndex)
         
-        lblDisplay.text = String(nuevoTexto)
+        lblDisplay.text = String(texto)
     }
 }
 
