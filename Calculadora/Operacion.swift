@@ -28,7 +28,31 @@ class Operacion{
     //Esta funcion establece el operando2
     func setOperando2(num2: Float) -> Void
     {
-        <#function body#>
+        self.operando2 = num2
+    }
+    
+    
+    func resolver () -> Bool {
+        if(self.operador == "+"){
+            resultado = operando1 + operando2
+        return true
+        }
+        
+        else if(self.operador == "-"){
+            resultado = operando1 - operando2
+        return true
+        }
+        
+        else if(self.operador == "X"){
+            resultado = operando1 * operando2
+        return true
+        }
+        
+        else if(self.operador == "/"){
+            resultado = operando1 / operando2
+            return true
+        }
+        return false
     }
     
     
