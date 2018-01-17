@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		822F4B23200F794E009A1D9D /* CALCULATHOR_PEQ.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 822F4B22200F794E009A1D9D /* CALCULATHOR_PEQ.PNG */; };
 		82490F95200E0D5B0010FA1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82490F94200E0D5B0010FA1F /* AppDelegate.swift */; };
 		82490F97200E0D5B0010FA1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82490F96200E0D5B0010FA1F /* ViewController.swift */; };
 		82490F9A200E0D5B0010FA1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82490F98200E0D5B0010FA1F /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		822F4B22200F794E009A1D9D /* CALCULATHOR_PEQ.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CALCULATHOR_PEQ.PNG; sourceTree = "<group>"; };
 		82490F91200E0D5B0010FA1F /* Calculadora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculadora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82490F94200E0D5B0010FA1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82490F96200E0D5B0010FA1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 		82490F93200E0D5B0010FA1F /* Calculadora */ = {
 			isa = PBXGroup;
 			children = (
+				822F4B22200F794E009A1D9D /* CALCULATHOR_PEQ.PNG */,
 				82490F94200E0D5B0010FA1F /* AppDelegate.swift */,
 				82490F96200E0D5B0010FA1F /* ViewController.swift */,
 				82490F98200E0D5B0010FA1F /* Main.storyboard */,
@@ -124,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82490F9F200E0D5B0010FA1F /* LaunchScreen.storyboard in Resources */,
+				822F4B23200F794E009A1D9D /* CALCULATHOR_PEQ.PNG in Resources */,
 				82490F9C200E0D5B0010FA1F /* Assets.xcassets in Resources */,
 				82490F9A200E0D5B0010FA1F /* Main.storyboard in Resources */,
 			);
