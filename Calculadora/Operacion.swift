@@ -9,9 +9,27 @@
 import Foundation
 
 class Operacion{
-    
+   /*
     var cadena: String!
-    var array: Array<Float>!
-    var flotante: Float!
+    var operandos: Array<Float>!
+    var cadenaArray: Array<String>!
+     */
+    var operando1: Float!
+    var operando2: Float!
+    var operador: String!
+    var resultado: Float!
+    var cadenaResultado: String!
+    
+    init(num1: Float, signo: String) {
+        self.operando1 = num1
+        self.operador = signo
+    }
+    
+    //Esta funcion establece el operando2
+    func setOperando2(num2: Float) -> Void
+    {
+        <#function body#>
+    }
+    
     
 }
