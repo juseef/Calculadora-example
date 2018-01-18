@@ -30,9 +30,17 @@ class ViewController: UIViewController {
     @IBAction func btn_operaciones(_ sender: UIButton) {
         var n1:Float = Float(lblDisplay.text!)!
         switch(sender.titleLabel!.text!){
+    
         case "+":
+            if (lblDisplay.text!==nil){
+                n1 = 0
+                operacion = Operacion(num1:n1,signo:"+")
+                lblDisplay.text = ""
+            }else{
             operacion = Operacion(num1:n1,signo:"+")
-            lblDisplay.text = ""
+                lblDisplay.text = ""
+                
+            }
             break
         case "-":
             break
