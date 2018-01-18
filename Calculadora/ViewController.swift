@@ -23,8 +23,6 @@ class ViewController: UIViewController {
         print("\(texto)")
         actualizarVista(texto:texto)
         
-        
-        
     }
     //funcion que contiene los botones de operaciones
     @IBAction func btn_operaciones(_ sender: UIButton) {
