@@ -2,8 +2,8 @@
 //  Operacion.swift
 //  Calculadora
 //
-//  Created by Jose Flores on 17/01/2018.
-//  Copyright © 2018 Jose Flores. All rights reserved.
+//  Created by JoNaDCorp on 17/01/2018.
+//  Copyright © 2018 JoNaDCorp. All rights reserved.
 //
 
 import Foundation
