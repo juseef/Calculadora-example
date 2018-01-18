@@ -52,6 +52,10 @@ class Operacion{
             resultado = operando1 / operando2
             return true
         }
+        else if(self.operador == "%"){
+            resultado = operando1 / 100
+            return true
+        }
         return false
     }
     

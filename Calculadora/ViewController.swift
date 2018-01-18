@@ -12,39 +12,47 @@ class ViewController: UIViewController {
     var operacion: Operacion!
     
     @IBOutlet weak var lblDisplay: UITextField!
+    var n1:Float!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
     //Cuando se llama a esta función, se actualiza el TextField de la interfaz con el texto del boton pulsado
     @IBAction func btnPulsado(_ sender: UIButton) {
-        let texto = sender.titleLabel!.text!
+        var texto = sender.titleLabel!.text!
         print("\(texto)")
         actualizarVista(texto:texto)
+        
         
     }
     //funcion que contiene los botones de operaciones
     @IBAction func btn_operaciones(_ sender: UIButton) {
-        var n1:Float = Float(lblDisplay.text!)!
+        if(lblDisplay.text == ""){
+            n1 = 0
+        }else{
+            n1 = Float(lblDisplay.text!)!
+        }
+        
+        
         switch(sender.titleLabel!.text!){
     
         case "+":
-            if (lblDisplay.text!==nil){
-                n1 = 0
-                operacion = Operacion(num1:n1,signo:"+")
-                lblDisplay.text = ""
-            }else{
             operacion = Operacion(num1:n1,signo:"+")
                 lblDisplay.text = ""
-                
-            }
             break
         case "-":
+            operacion = Operacion(num1:n1, signo: "-")
+            lblDisplay.text = ""
             break
         case "X":
+            operacion = Operacion(num1:n1, signo: "X")
+            lblDisplay.text = ""
             break
         case "/":
+            operacion = Operacion(num1:n1, signo: "/")
+            lblDisplay.text = ""
+            break
+        case "C":
+            n1 = 0
+            operacion = nil
+            lblDisplay.text = ""
             break
         case "=":
             operacion.setOperando2(num2: Float(lblDisplay.text!)!)
