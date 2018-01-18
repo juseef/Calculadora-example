@@ -161,6 +161,9 @@
                                 <state key="normal" title="=">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btn_operaciones:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GpW-Ty-DrN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mol-Q3-E7h">
                                 <rect key="frame" x="269" y="379" width="90" height="82"/>
@@ -170,6 +173,9 @@
                                 <state key="normal" title="/">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="btn_operaciones:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fZ4-IA-OTE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RnH-W2-3EQ">
                                 <rect key="frame" x="269" y="471" width="90" height="82"/>
@@ -179,6 +185,9 @@
                                 <state key="normal" title="X">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="btn_operaciones:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vs4-zN-CQt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6G-zk-Qi7">
                                 <rect key="frame" x="269" y="563" width="90" height="82"/>
@@ -188,6 +197,9 @@
                                 <state key="normal" title="-">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="btn_operaciones:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pyb-Hr-dTG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMD-AR-L4p">
                                 <rect key="frame" x="269" y="655" width="90" height="82"/>
@@ -197,6 +209,9 @@
                                 <state key="normal" title="+">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="btn_operaciones:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T2c-No-nCw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6NO-gh-R0f">
                                 <rect key="frame" x="37" y="295" width="69" height="82"/>

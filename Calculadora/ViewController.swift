@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var operacion: Operacion!
     
     @IBOutlet weak var lblDisplay: UITextField!
     
@@ -23,7 +23,36 @@ class ViewController: UIViewController {
         print("\(texto)")
         actualizarVista(texto:texto)
         
+        
+        
     }
+    //funcion que contiene los botones de operaciones
+    @IBAction func btn_operaciones(_ sender: UIButton) {
+        var n1:Float = Float(lblDisplay.text!)!
+        switch(sender.titleLabel!.text!){
+        case "+":
+            operacion = Operacion(num1:n1,signo:"+")
+            lblDisplay.text = ""
+            break
+        case "-":
+            break
+        case "X":
+            break
+        case "/":
+            break
+        case "=":
+            operacion.setOperando2(num2: Float(lblDisplay.text!)!)
+            if(operacion.resolver()){
+                lblDisplay.text = String(operacion.resultado)
+            }else{
+                lblDisplay.text = "Error"
+            }
+            break
+        default:
+            break
+        }
+    }
+    
    //Esta función se encarga de mostrar los cambios del modelo en la interfaz
     func actualizarVista(texto : String){
         print("\(texto)")
@@ -32,9 +61,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func bntBorrar(_ sender: UIButton) {
-        let nuevoTexto = lblDisplay.text![..<(lblDisplay.text!.endIndex - 1)]
+        var texto:String = (lblDisplay.text)!
+        texto.remove(at: texto.endIndex)
         
-        lblDisplay.text = String(nuevoTexto)
+        lblDisplay.text = String(texto)
     }
 }
 
