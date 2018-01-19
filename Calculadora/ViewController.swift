@@ -32,6 +32,7 @@ class ViewController: UIViewController {
         if(lblDisplay.text == ""){
         //si esta vacio se tomará como un 0
             n1 = 0
+            permisoConcedido = true
         }else{
             //si no esta vacio se comprueba si hay un punto solo
             if (lblDisplay.text != "."){
