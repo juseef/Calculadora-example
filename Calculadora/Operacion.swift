@@ -19,10 +19,12 @@ class Operacion{
     var operador: String!
     var resultado: Float!
     var cadenaResultado: String!
+    var operacionTerminada:Bool!
     
     init(num1: Float, signo: String) {
         self.operando1 = num1
         self.operador = signo
+        self.operacionTerminada = false
     }
     
     //Esta funcion establece el operando2
@@ -35,21 +37,25 @@ class Operacion{
     func resolver () -> Bool {
         if(self.operador == "+"){
             resultado = operando1 + operando2
+            self.operacionTerminada = true
         return true
         }
         
         else if(self.operador == "-"){
             resultado = operando1 - operando2
+            self.operacionTerminada = true
         return true
         }
         
         else if(self.operador == "X"){
             resultado = operando1 * operando2
+            self.operacionTerminada = true
         return true
         }
         
         else if(self.operador == "/"){
             resultado = operando1 / operando2
+            self.operacionTerminada = true
             return true
         }
         return false
